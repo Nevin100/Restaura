@@ -7,7 +7,7 @@ import Mission from "./components/Mission.jsx";
 import Expertise from "./components/Expertise.jsx";
 import Reviews from "./components/Reviews.jsx";
 import ContactUs from "./components/ContactUs.jsx";
-
+import Footer from "./components/Footer.jsx";
 const App = () => {
   return (
     <div className="overflow-y-hidden text-neutral-200 antialiased">
@@ -19,6 +19,7 @@ const App = () => {
       <Expertise />
       <Reviews />
       <ContactUs />
+      <Footer />
     </div>
   );
 };

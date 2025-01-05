@@ -17,7 +17,7 @@ const Dishes = () => {
       <motion.div
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1, delay: 0.2 }}
+        transition={{ duration: 3, delay: 0.4 }}
         className="grid grid-cols-1 gap-8 md:grid-cols-5"
       >
         {DISHES.map((project, index) => (

@@ -22,8 +22,8 @@ const Hero = () => {
       <div className="relative z-20 flex h-screen flex-col justify-end pb-20">
         <motion.img
           initial={{ opacity: 0, y: 50 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1.5 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, delay: 0.2 }}
           src={logo}
           className="w-full p-4 "
         />

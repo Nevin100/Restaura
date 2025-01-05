@@ -9,8 +9,7 @@ const About = () => {
       <motion.h2
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        transition={{ duration: 1, delay: 0.2 }}
+        transition={{ duration: 2, delay: 0.3 }}
         className="mb-8 text-center text-3xl tracking-tighter lg:text-4xl"
       >
         About Us
@@ -19,7 +18,6 @@ const About = () => {
         <motion.div
           initial={{ opacity: 0, x: -50 }}
           whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: true }}
           transition={{ duration: 4, delay: 1.2 }}
           className="w-full p-4 lg:w-1/2"
         >
@@ -29,8 +27,7 @@ const About = () => {
           <motion.h2
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 4, delay: 1.2 }}
+            transition={{ duration: 4, delay: 0.4 }}
             className="text-4xl tracking-tighter lg:text-6xl"
           >
             {ABOUT.header}

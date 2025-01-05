@@ -1,11 +1,23 @@
 import React from "react";
 import { CONTACT } from "../constants";
-
+import { motion } from "framer-motion";
 const ContactUs = () => {
   return (
     <section className="container mx-auto py-16" id="contact">
-      <h2 className="mb-8 text-center text-3xl lg:text-4xl">Contact Us</h2>
-      <div className="text-neutral-400">
+      <motion.h2
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 2, delay: 0.4 }}
+        className="mb-8 text-center text-3xl lg:text-4xl"
+      >
+        Contact Us
+      </motion.h2>
+      <motion.div
+        initial={{ opacity: 0, x: -50 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ duration: 2, delay: 0.3 }}
+        className="text-neutral-400"
+      >
         {CONTACT.map((detail) => (
           <p
             key={detail.key}
@@ -15,7 +27,7 @@ const ContactUs = () => {
             {detail.value}
           </p>
         ))}
-      </div>
+      </motion.div>
     </section>
   );
 };
