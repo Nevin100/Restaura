@@ -6,6 +6,7 @@ import About from "./components/About.jsx";
 import Mission from "./components/Mission.jsx";
 import Expertise from "./components/Expertise.jsx";
 import Reviews from "./components/Reviews.jsx";
+import ContactUs from "./components/ContactUs.jsx";
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
       <Mission />
       <Expertise />
       <Reviews />
+      <ContactUs />
     </div>
   );
 };
