@@ -24,9 +24,19 @@ const Reviews = () => {
           />
           <div className="tracking-tighter">
             <h6 className="">{REVIEW.name}</h6>
-            <p className=""> </p>
+            <p className="text-sm text-neutral-500 ">{REVIEW.profession} </p>
           </div>
         </div>
+      </div>
+      <div className="mt-14 flex flex-col items-center justify-center gap-2 md:flex-row">
+        {[customer1, customer2, customer3, customer4].map((customer, index) => (
+          <img
+            key={index}
+            src={customer}
+            className="h-[300px] w-[200px] rounded-br-3xl rounded-tl-3xl"
+            alt="customer"
+          />
+        ))}
       </div>
     </section>
   );
