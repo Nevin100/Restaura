@@ -1,6 +1,6 @@
 import React from "react";
 import { SOCIAL_MEDIA_LINKS } from "../constants";
-import motion from "framer-motion";
+import { motion } from "framer-motion";
 
 const Footer = () => {
   return (
